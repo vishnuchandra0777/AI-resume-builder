@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI <span>Resume</span> Builder</h1>
+            <p class="tagline">Craft the perfect resume with AI assistance</p>
+        </header>
+        
+        <div class="resume-form">
+            <!-- Personal Information -->
+            <section class="form-section personal-info">
+                <h2><span>1</span> Personal Information</h2>
+                <div class="form-grid">
+                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="tel" id="phone" placeholder="Phone">
+                    <input type="text" id="linkedin" placeholder="LinkedIn Profile">
+                    <input type="text" id="portfolio" placeholder="Portfolio Website">
+                </div>
+            </section>
+
+            <!-- Professional Summary -->
+            <section class="form-section">
+                <h2><span>2</span> Professional Summary</h2>
+                <textarea id="summary" placeholder="Briefly describe your professional background and key skills"></textarea>
+            </section>
+
+            <!-- Skills -->
+            <section class="form-section skills">
+                <h2><span>3</span> Skills</h2>
+                <div id="skills-container" class="tags-container">
+                    <!-- Skills will be added here as tags -->
+                </div>
+                <div class="add-item">
+                    <input type="text" id="new-skill" placeholder="Add skill (e.g., JavaScript, Project Management)">
+                    <button id="add-skill">+ Add</button>
+                </div>
+            </section>
+
+            <!-- Work Experience -->
+            <section class="form-section experience">
+                <h2><span>4</span> Work Experience</h2>
+                <div id="experience-container">
+                    <!-- Experience entries will be added here -->
+                </div>
+                <button id="add-experience" class="add-btn">+ Add Experience</button>
+            </section>
+
+            <!-- Education -->
+            <section class="form-section education">
+                <h2><span>5</span> Education</h2>
+                <div id="education-container">
+                    <!-- Education entries will be added here -->
+                </div>
+                <button id="add-education" class="add-btn">+ Add Education</button>
+            </section>
+
+            <!-- Projects -->
+            <section class="form-section projects">
+                <h2><span>6</span> Projects</h2>
+                <div id="projects-container">
+                    <!-- Project entries will be added here -->
+                </div>
+                <button id="add-project" class="add-btn">+ Add Project</button>
+            </section>
+
+            <!-- Achievements -->
+            <section class="form-section achievements">
+                <h2><span>7</span> Achievements</h2>
+                <div id="achievements-container">
+                    <!-- Achievement entries will be added here -->
+                </div>
+                <button id="add-achievement" class="add-btn">+ Add Achievement</button>
+            </section>
+
+            <!-- Languages -->
+            <section class="form-section languages">
+                <h2><span>8</span> Languages</h2>
+                <div id="languages-container" class="tags-container">
+                    <!-- Languages will be added here as tags -->
+                </div>
+                <div class="add-item">
+                    <input type="text" id="new-language" placeholder="Add language (e.g., English, Spanish)">
+                    <button id="add-language">+ Add</button>
+                </div>
+            </section>
+
+            <!-- Training/Certifications -->
+            <section class="form-section training">
+                <h2><span>9</span> Training & Certifications</h2>
+                <div id="training-container">
+                    <!-- Training entries will be added here -->
+                </div>
+                <button id="add-training" class="add-btn">+ Add Training</button>
+            </section>
+
+            <!-- AI Optimization -->
+            <section class="form-section ai-optimization">
+                <h2><span>10</span> AI Optimization</h2>
+                <div class="ai-box">
+                    <textarea id="job-description" placeholder="Paste job description here for AI suggestions"></textarea>
+                    <button id="analyze-btn" class="ai-btn">Get AI Suggestions</button>
+                    <div id="ai-suggestions" class="suggestions-box"></div>
+                </div>
+            </section>
+
+            <div class="action-buttons">
+                <button id="preview-resume" class="secondary-btn">Preview Resume</button>
+                <button id="generate-resume" class="primary-btn">Generate PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
